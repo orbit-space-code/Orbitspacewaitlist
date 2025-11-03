@@ -115,12 +115,7 @@ export default function App() {
               >
                 About Us
               </button>
-              <a
-                href="#faq"
-                className="text-gray-400 hover:text-white transition-colors text-sm font-medium"
-              >
-                FAQ
-              </a>
+              {/* FAQ removed from main content; footer retains a button */}
             </div>
           </div>
         </header>
@@ -415,109 +410,57 @@ export default function App() {
           </div>
         </section>
 
-        {/* FAQ Section */}
-        <section id="faq" className="py-20 px-6 bg-gradient-to-b from-black to-gray-900">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
-              Frequently Asked Questions
-            </h2>
-            <p className="text-xl text-gray-400 text-center mb-16">
-              Everything you need to know about OrbitSpace
-            </p>
-
-            <div className="space-y-6">
-              {/* FAQ 1 */}
-              <div className="bg-white/5 border border-white/10 rounded-xl p-6">
-                <h3 className="text-2xl font-bold mb-3 text-white">
-                  What is OrbitSpace?
-                </h3>
-                <p className="text-gray-400 leading-relaxed">
-                  OrbitSpace is an intelligent coding agent with an "Overseer" that collaborates with you in real-time. Unlike autonomous AI agents that create unmaintainable code, OrbitSpace asks clarifying questions and ensures every decision aligns with your vision before building. The platform uses a three-step process: <strong className="text-white">Research</strong> (analyzing your codebase and patterns), <strong className="text-white">Planning</strong> (collaborating to create a detailed blueprint), and <strong className="text-white">Implementation</strong> (building with continuous oversight and real-time guidance). This approach ensures you build code you control, not code that controls you.
-                </p>
-              </div>
-
-              {/* FAQ 2 */}
-              <div className="bg-white/5 border border-white/10 rounded-xl p-6">
-                <h3 className="text-2xl font-bold mb-3 text-white">
-                  How is OrbitSpace different from other AI coding assistants?
-                </h3>
-                <p className="text-gray-400 leading-relaxed">
-                  Most coding agents work autonomously and generate code without your input, leading to issues you discover later. OrbitSpace uses an intelligent Overseer that acts as a co-pilot, asking questions and getting your approval before implementing changes. This prevents problems during development instead of after. While traditional workflows use AI to generate code and then rely on separate review tools to find errors, OrbitSpace prevents issues from happening in the first place with built-in real-time review that guides the agent. The key difference is <strong className="text-white">proactive prevention</strong> versus <strong className="text-white">reactive fixing</strong>.
-                </p>
-              </div>
-
-              {/* FAQ 3 */}
-              <div className="bg-white/5 border border-white/10 rounded-xl p-6">
-                <h3 className="text-2xl font-bold mb-3 text-white">
-                  When will OrbitSpace be available?
-                </h3>
-                <p className="text-gray-400 leading-relaxed">
-                  OrbitSpace is currently in active development. We're working hard to deliver a revolutionary coding experience that transforms how developers build software. Join our waitlist to be among the first to access it when we launch. We'll notify you via email as soon as OrbitSpace is ready, and waitlist members may receive early access opportunities and special launch benefits. Stay tuned for updates!
-                </p>
-              </div>
-
-              {/* FAQ 4 */}
-              <div className="bg-white/5 border border-white/10 rounded-xl p-6">
-                <h3 className="text-2xl font-bold mb-3 text-white">
-                  Who is OrbitSpace for?
-                </h3>
-                <p className="text-gray-400 leading-relaxed">
-                  OrbitSpace is built for developers, creators, and innovators at any level. Whether you're a <strong className="text-white">solo developer</strong> working on personal projects, a <strong className="text-white">startup team</strong> building an MVP, or an <strong className="text-white">enterprise team</strong> building complex applications, OrbitSpace adapts to your needs. If you want to build maintainable, well-structured code with AI assistance while maintaining full control over the development process, OrbitSpace is for you. It's especially valuable for teams that want to avoid the "rewrite cycle" and technical debt that comes from autonomous AI code generation.
-                </p>
-              </div>
-
-              {/* FAQ 5 */}
-              <div className="bg-white/5 border border-white/10 rounded-xl p-6">
-                <h3 className="text-2xl font-bold mb-3 text-white">
-                  How does the Overseer prevent code issues?
-                </h3>
-                <p className="text-gray-400 leading-relaxed">
-                  The Overseer reviews the AI agent's work in real-time and stops to ask clarifying questions whenever something is unclear. Instead of making assumptions that lead to problems, it collaborates with you to ensure every implementation matches your requirements before it's written. For example, if the agent is about to implement a feature, the Overseer might ask: "What should the success toast message say?" or "Should we use the existing authentication pattern?" You provide the answer, and the agent implements it correctly the first time. This <strong className="text-white">real-time guidance</strong> prevents the need for post-facto code review and corrections, saving you time and ensuring code quality from the start.
-                </p>
-              </div>
-
-              {/* FAQ 6 */}
-              <div className="bg-white/5 border border-white/10 rounded-xl p-6">
-                <h3 className="text-2xl font-bold mb-3 text-white">
-                  What technologies does OrbitSpace support?
-                </h3>
-                <p className="text-gray-400 leading-relaxed">
-                  OrbitSpace works with modern web technologies including <strong className="text-white">React</strong>, <strong className="text-white">TypeScript</strong>, <strong className="text-white">Node.js</strong>, <strong className="text-white">Next.js</strong>, <strong className="text-white">Vue</strong>, and many other popular frameworks and libraries. It understands your codebase patterns, existing implementations, and architectural decisions to maintain consistency with your project's structure. OrbitSpace analyzes your codebase before making changes, ensuring it follows your established patterns and conventions rather than imposing its own style. This makes the generated code feel native to your project.
-                </p>
-              </div>
-
-              {/* FAQ 7 */}
-              <div className="bg-white/5 border border-white/10 rounded-xl p-6">
-                <h3 className="text-2xl font-bold mb-3 text-white">
-                  Is OrbitSpace free to use?
-                </h3>
-                <p className="text-gray-400 leading-relaxed">
-                  Pricing details will be announced closer to launch. We're designing flexible pricing options to accommodate developers and teams of all sizes. Join the waitlist to be the first to know about our launch plans, pricing tiers, and any <strong className="text-white">early access benefits</strong> or special offers for waitlist members. We're committed to making OrbitSpace accessible to the developer community while ensuring sustainable growth and continuous improvement of the platform.
-                </p>
-              </div>
-
-              {/* FAQ 8 */}
-              <div className="bg-white/5 border border-white/10 rounded-xl p-6">
-                <h3 className="text-2xl font-bold mb-3 text-white">
-                  Can I try OrbitSpace before it launches?
-                </h3>
-                <p className="text-gray-400 leading-relaxed">
-                  OrbitSpace is currently in active development with a focus on delivering a polished, reliable experience at launch. <strong className="text-white">Early access and beta testing opportunities</strong> may be available to waitlist members. Sign up now to stay informed about beta testing opportunities, early access programs, and launch updates. Waitlist members will receive priority access and may be invited to participate in closed beta testing, where your feedback will directly shape OrbitSpace's development.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
+        {/* FAQ has been removed from the homepage to streamline the landing page. */}
 
         {/* Footer */}
         <footer className="px-6 py-8 border-t border-white/10">
-          <div className="max-w-7xl mx-auto text-center">
-            <p className="text-gray-400 text-sm mb-2">
-              © 2025 OrbitSpace. All Rights Reserved.
-            </p>
-            <p className="text-gray-500 text-sm">
-              OrbitSpace is built with ❤️ and we dedicate this to PK.
-            </p>
+          <div className="max-w-7xl mx-auto text-center space-y-4">
+            <div className="flex items-center justify-center space-x-6">
+              {/* FAQ button kept in footer as a placeholder route (/faq) - update URL if you have a dedicated FAQ page */}
+              <a
+                href="/faq"
+                className="text-gray-400 hover:text-white transition-colors text-sm font-medium px-3 py-2 border border-white/5 rounded"
+              >
+                FAQ
+              </a>
+
+              {/* Product Hunt follow badge (converted to JSX) */}
+              <a
+                href="https://www.producthunt.com/products/orbitspace-ask-first-ai-coding-agent?utm_source=badge-follow&utm_medium=badge&utm_source=badge-orbitspace-ask-first-ai-coding-agent"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Follow OrbitSpace on Product Hunt"
+                className="inline-block"
+              >
+                <img
+                  src="https://api.producthunt.com/widgets/embed-image/v1/follow.svg?product_id=1123297&theme=light"
+                  alt="OrbitSpace - Ask First AI Coding agent - Product Hunt"
+                  width={250}
+                  height={54}
+                  style={{ width: 250, height: 54 }}
+                />
+              </a>
+
+              {/* LinkedIn link: updated to official company page and using a small icon */}
+              <a
+                href="https://www.linkedin.com/company/orbitspace/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white transition-colors flex items-center"
+                aria-label="OrbitSpace on LinkedIn"
+                title="OrbitSpace on LinkedIn"
+              >
+                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M4.98 3.5C4.98 4.88 3.87 6 2.49 6 1.11 6 0 4.88 0 3.5 0 2.12 1.12 1 2.49 1c1.38 0 2.49 1.12 2.49 2.5zM.5 8.98h3.98V24H.5V8.98zM8.98 8.98h3.82v2.06h.05c.53-1 1.82-2.06 3.74-2.06 4 0 4.74 2.64 4.74 6.07V24h-3.98v-7.2c0-1.72-.03-3.93-2.4-3.93-2.4 0-2.77 1.88-2.77 3.8V24H8.98V8.98z" />
+                </svg>
+                <span className="hidden sm:inline ml-2 text-sm">LinkedIn</span>
+              </a>
+            </div>
+
+            <div>
+              <p className="text-gray-400 text-sm mb-2">© 2025 OrbitSpace. All Rights Reserved.</p>
+              <p className="text-gray-500 text-sm">OrbitSpace is built with ❤️ and we dedicate this to PK.</p>
+            </div>
           </div>
         </footer>
       </div>
