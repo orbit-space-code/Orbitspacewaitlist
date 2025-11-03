@@ -196,6 +196,14 @@ Both Vercel and Netlify support automatic deployments:
 
 ## 🐛 Troubleshooting
 
+### Issue: Cannot Connect Custom Domain in Vercel
+- **Solution**: See [VERCEL_DOMAIN_TROUBLESHOOTING.md](./VERCEL_DOMAIN_TROUBLESHOOTING.md) for detailed troubleshooting guide
+- **Quick fixes**:
+  - Check DNS records match Vercel's instructions exactly
+  - Wait 15-30 minutes for DNS propagation
+  - Verify domain isn't added to another Vercel project
+  - Check SSL certificate status (auto-issued after DNS is correct)
+
 ### Issue: Site loads but Convex connection fails
 - **Solution**: Check `VITE_CONVEX_URL` environment variable is set correctly in your hosting platform
 
@@ -203,7 +211,11 @@ Both Vercel and Netlify support automatic deployments:
 - **Solution**: Ensure SPA routing is configured (rewrites/redirects). The `vercel.json` file handles this automatically.
 
 ### Issue: Domain not resolving
-- **Solution**: Wait for DNS propagation (up to 48 hours), or check DNS records are correct
+- **Solution**: 
+  - Wait for DNS propagation (up to 48 hours, usually 15-30 minutes)
+  - Check DNS records are correct using [whatsmydns.net](https://www.whatsmydns.net/)
+  - Verify records at your domain registrar match Vercel's requirements
+  - See [VERCEL_DOMAIN_TROUBLESHOOTING.md](./VERCEL_DOMAIN_TROUBLESHOOTING.md) for detailed steps
 
 ### Issue: Build fails
 - **Solution**: Ensure Node.js version is 18+ in your hosting platform settings
