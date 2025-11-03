@@ -30,8 +30,8 @@ OrbitSpace is a revolutionary platform that transforms how developers, creators,
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/YOUR_USERNAME/orbitspace.git
-cd orbitspace
+git clone https://github.com/orbit-space-code/Orbitspacewaitlist.git
+cd Orbitspacewaitlist
 ```
 
 2. Install dependencies:
@@ -91,6 +91,8 @@ npm run build
 ```
 
 3. Deploy to your preferred hosting platform (Vercel, Netlify, etc.)
+
+See [DEPLOYMENT.md](./DEPLOYMENT.md) for detailed deployment instructions to **orbitspace.org**.
 
 ## 🤝 Contributing
 
